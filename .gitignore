@@ -1,0 +1,57 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# pytest / coverage / test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+# But allow shared workspace settings if needed:
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Environment files
+.env
+.env.*
+*.env
+
+# Logs
+*.log
+
+# MyPy / type checker
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pyright / pylance
+.pyright/
+
+# Data
+data/processed/
+*.csv
+*.tsv
+*.parquet
+*.xlsx
+
+!data/raw/jobs_sample.csv

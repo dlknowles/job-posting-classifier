@@ -1,0 +1,5 @@
+id,title,description,label
+1,Senior Machine Learning Engineer,"We are looking for an ML engineer with experience in Python, TensorFlow, and deploying models to production.",AI_ML
+2,Full Stack Developer,"Seeking a full stack engineer with experience in React, Node.js, and SQL databases.",SWE
+3,DevOps Engineer,"Role focuses on CI/CD pipelines, Kubernetes, Docker, and cloud infrastructure.",DEVOPS
+4,Customer Support Specialist,"Respond to customer inquiries via email and chat. Strong communication skills required.",OTHER
