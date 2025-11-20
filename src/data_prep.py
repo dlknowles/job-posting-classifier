@@ -6,7 +6,7 @@ import re
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 RAW_DATA_PATH = PROJECT_ROOT / "data" / "raw" / "jobs_full.csv"
 
-def main() -> None:
+def main():
     if not RAW_DATA_PATH.exists():
         raise FileNotFoundError(f"Expected to find {RAW_DATA_PATH}, but it does not exist.")
     
@@ -44,13 +44,13 @@ def main() -> None:
     df_processed.to_csv(PROCESSED_DATA_PATH, index=False)
     print(f"\nSaved processed data to {PROCESSED_DATA_PATH}")
 
-def clean_text(text: str) -> str:
+def clean_text(text: str):
     if text is None:
         return ""
     
     return re.sub(r"\s+", " ", text).lower().strip()
 
-def label_row(title: str, description: str) -> Label:
+def label_row(title: str, description: str):
     text = f"{title} {description}".lower()
 
     ai_ml_keywords = [

@@ -1,0 +1,14 @@
+{
+  "label2id": {
+    "AI_ML": 0,
+    "DEVOPS": 1,
+    "OTHER": 2,
+    "SWE": 3
+  },
+  "id2label": {
+    "0": "AI_ML",
+    "1": "DEVOPS",
+    "2": "OTHER",
+    "3": "SWE"
+  }
+}

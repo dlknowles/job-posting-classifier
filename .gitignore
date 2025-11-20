@@ -1,57 +1,48 @@
 # --- Python ---
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
-*.so
-
-# Virtual environment
-venv/
-.env/
-.venv/
-
-# Distribution / packaging
-build/
-dist/
+*.pkl
 *.egg-info/
-*.egg
-.eggs/
-
-# pytest / coverage / test artifacts
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# VS Code
-.vscode/
-# But allow shared workspace settings if needed:
-!.vscode/settings.json
-!.vscode/extensions.json
-
-# Environment files
-.env
-.env.*
-*.env
-
-# Logs
+.venv/
+env/
+venv/
+pip-wheel-metadata/
 *.log
 
-# MyPy / type checker
-.mypy_cache/
-.dmypy.json
-dmypy.json
+# --- Jupyter / Notebooks ---
+.ipynb_checkpoints/
 
-# pyright / pylance
-.pyright/
+# --- VS Code ---
+.vscode/
 
-# Data
+# --- Environment / Cache / Build ---
+.cache/
+*.cache/
+*.DS_Store
+
+# --- HuggingFace / Transformers ---
+# Model download caches
+huggingface/
+*.lock
+*tokenizer.json
+*.safetensors
+*.bin
+models/*.bin
+models/*.safetensors
+models/cache/
+
+# --- Data files ---
+# Raw and processed data should NOT be committed unless intentionally versioned.
+data/raw/
 data/processed/
-*.csv
-*.tsv
-*.parquet
-*.xlsx
 
-!data/raw/jobs_sample.csv
+# --- Checkpoints from Trainer ---
+runs/
+results/
+checkpoint-*/
+
+# --- Windows cruft ---
+Thumbs.db
+Desktop.ini
